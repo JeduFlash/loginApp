@@ -8,6 +8,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { RegisterPageComponent } from './componentes/register-page/register-page.component';
 import { PrivatePageComponent } from './componentes/private-page/private-page.component';
 import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
+import { LoginPageComponent } from './componentes/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundPageComponent } from './componentes/not-found-page/not-found-pa
     NavbarComponent,
     RegisterPageComponent,
     PrivatePageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

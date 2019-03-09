@@ -15,8 +15,11 @@ import { LoginPageComponent } from './componentes/login-page/login-page.componen
 import {AngularFireModule}  from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {environment} from  '../environments/environment';
-//servicio
+
+//servicio - importar en providers []
 import {AuthService} from  './servicios/auth.service';
+import {AuthGuard} from './guards/auth.guard';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,7 @@ import {AuthService} from  './servicios/auth.service';
     
     
   ],
-  providers: [AuthService],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
